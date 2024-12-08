@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Dgs Puanmatik</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+        <form action="islemler.php" method="post" target="_blank">
+
+    <center>
+    <table> 
+    
+        <tr>
+            <td colspan="3" align="center">DGS Puanmatik</td>
+        </tr>
+        <tr align="center">
+            <td></td>
+            <td height="35">Dogru</td>
+            <td>Yanlis</td>
+        </tr>
+        <tr>
+            <td align="center">Sayisal testi</td>
+            <td><input type="text" name="sayisaltrue"></td>
+            <td><input type="text" name="sayisalfalse"></td>
+        </tr>
+        <tr>
+            <td align="center">Sozel testi</td>
+            <td><input type="text" name="sozeltrue"></td>
+            <td><input type="text" name="sozelfalse"></td>
+        </tr>
+        <tr align="center">
+            <td>Onlisans Basari Puani (Zorunlu alan)</td>
+            <td colspan="2"><input type="text" name="html_obp" size="10" required></td>
+        </tr>
+        <tr>
+            <td align="center">Alaniniz</td>
+            <td colspan="3" align="center">
+                <input type="radio" name="alan" value="say" required>Sayisal
+                <input type="radio" name="alan" value="soz" required>Sozel
+                <input type="radio" name="alan" value="esit" required>Esit Agirlik
+            </td>
+        </tr>
+        <tr align="center">
+            <td>2019 oncesinde DGS ile bir programa yerlestirildiniz mi?</td>
+            <td><input type="radio" name="html_tarih" value="evet" required>Evet</td>
+            <td><input type="radio" name="html_tarih" value="hayir" required>Hayir</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <input type="submit" name="hesapla" value="Hesapla">
+                <input type="reset" name="temizle" value="Temizle">
+            </td>
+            
+        </tr>
+
+
+        </form>
+    
+
+    </table>
+    </center>
+
+</body>
+</html>
